@@ -103,6 +103,10 @@
 
 	var _storesTestStore2 = _interopRequireDefault(_storesTestStore);
 
+	var _VectorMap = __webpack_require__(197);
+
+	var _VectorMap2 = _interopRequireDefault(_VectorMap);
+
 	var TestComponentChild = _react2['default'].createClass({
 	    displayName: 'TestComponentChild',
 
@@ -144,7 +148,8 @@
 	                    },
 	                    'Change message'
 	                )
-	            )
+	            ),
+	            _react2['default'].createElement(_VectorMap2['default'], null)
 	        );
 	    }
 	});
@@ -23116,7 +23121,6 @@
 	        key: 'onTestAction',
 	        decorators: [(0, _altUtilsDecorators.bind)(_actionsTestActions2['default'].testAction)],
 	        value: function onTestAction(message) {
-	            console.log(message);
 	            this.setState(this.state.set('message', message));
 	        }
 	    }]);
@@ -28203,6 +28207,74 @@
 	  return Immutable;
 
 	}));
+
+/***/ },
+/* 197 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	    value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _alt = __webpack_require__(2);
+
+	var _alt2 = _interopRequireDefault(_alt);
+
+	var _altContainer = __webpack_require__(16);
+
+	var _altContainer2 = _interopRequireDefault(_altContainer);
+
+	var _formsyReact = __webpack_require__(184);
+
+	var _formsyReact2 = _interopRequireDefault(_formsyReact);
+
+	var _react = __webpack_require__(17);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDom = __webpack_require__(191);
+
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+
+	var _InputText = __webpack_require__(192);
+
+	var _InputText2 = _interopRequireDefault(_InputText);
+
+	var _actionsTestActions = __webpack_require__(193);
+
+	var _actionsTestActions2 = _interopRequireDefault(_actionsTestActions);
+
+	var _storesTestStore = __webpack_require__(194);
+
+	var _storesTestStore2 = _interopRequireDefault(_storesTestStore);
+
+	var VectorMap = _react2['default'].createClass({
+	    displayName: 'VectorMap',
+
+	    componentDidMount: function componentDidMount() {
+	        $('#world-map').vectorMap({
+	            map: 'world_mill'
+	        });
+	    },
+
+	    render: function render() {
+	        var mapStyle = {
+	            width: '600px',
+	            height: '400px'
+	        };
+	        return _react2['default'].createElement('div', {
+	            id: 'world-map',
+	            style: mapStyle
+	        });
+	    }
+	});
+
+	exports['default'] = VectorMap;
+	module.exports = exports['default'];
 
 /***/ }
 /******/ ]);

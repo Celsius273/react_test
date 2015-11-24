@@ -7,6 +7,7 @@ import ReactDOM from 'react-dom'
 import InputText from './InputText'
 import TestActions from '../actions/TestActions'
 import TestStore from '../stores/TestStore'
+import VectorMap from './VectorMap'
 
 var TestComponentChild = React.createClass({
     propTypes: {
@@ -39,6 +40,7 @@ var TestComponentChild = React.createClass({
                     Change message
                     </button>
                 </Formsy.Form>
+                <VectorMap/>
             </div>
         )
     }

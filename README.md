@@ -11,6 +11,10 @@ Simply clone the repo, run 'npm install' to install all the requisite node modul
 
 The built js file is **build/react_test.js** and you can see the app's main page in **public/react_test.html**
 
+### What's with the map in the homepage?
+
+This map is to test integration with the jVectorMap library for svg maps, which can be found [here](http://jvectormap.com), Unfortunately this requires me to use JQuery for jVectorMap to work. I will be using react and jVectorMap in a future project.
+
 ### Anything else?
 
 When running the app, you can install [alt-devtool](https://github.com/goatslacker/alt-devtool) to see the current state of the TestStore store and all actions dispatched.
